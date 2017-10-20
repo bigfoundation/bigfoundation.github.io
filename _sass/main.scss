@@ -16,6 +16,12 @@ a {
 h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
 }
+h1 {
+    font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -81,6 +87,9 @@ p.rss-subscribe {
 
 /* Header */
 nav {
+    position: relative;
+    z-index: 1001;
+
     .logo {
         height: 50px; padding-top: 8px
     }
@@ -91,3 +100,54 @@ nav {
 }
 
 /* Footer */
+
+
+/* Home page */
+#index-banner {
+    height: 760px;
+
+    .index-bg {
+            position: absolute; 
+
+            height: 480px;
+            width: 100%;
+
+            background: url("/assets/img/intro.jpg");
+            background-size: cover;
+            background-position: center;
+
+            &.pinned {
+                margin-top: -56px;
+            }
+            
+        }
+    .container {
+        h1 {
+                margin-bottom: 240px;
+            }
+    }
+
+    .block {
+            width: 136px;
+      height: 104px;
+      border-radius: 2px;
+      background-color: #fafbfb;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+      padding: 0;
+      margin: 0 16px 16px 0;
+
+      .row {
+        height: 48px;
+        line-height: 48px;
+        margin: 0;
+
+      }
+      strong {
+        font-size: 24px;
+      }
+      &.progress {
+        width: 100%;
+      }
+    }
+
+}
