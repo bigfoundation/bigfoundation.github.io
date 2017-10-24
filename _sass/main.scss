@@ -104,7 +104,7 @@ nav {
 
 /* Home page */
 #index-banner {
-    height: 760px;
+    height: 710px;
 
     .index-bg {
             position: absolute; 
@@ -136,7 +136,7 @@ nav {
       padding: 0;
       margin: 0 16px 16px 0;
 
-      .row {
+      >.row {
         height: 48px;
         line-height: 48px;
         margin: 0;
@@ -147,7 +147,43 @@ nav {
       }
       &.progress {
         width: 100%;
+
+        .row {
+            margin: 0;
+            line-height: 2em;
+        }
+
+        .percent {
+            line-height: 105px;
+        }
+
       }
     }
+}
 
+#homefaq {
+    border: none;
+        box-shadow: none;
+
+    li {
+        &.active {
+            // background-color: #fafbfb;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+            .collapsible-header {
+                color: #ffc200;
+                border-bottom: 1px solid #eceff1;
+            }
+        }
+
+        .collapsible-header {
+            justify-content: space-between; 
+                border: none;  
+        }
+        .collapsible-body {
+            padding: 16px;
+        }
+        .material-icons {
+            vertical-align: text-bottom;
+        }
+    }
 }
