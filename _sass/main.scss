@@ -91,11 +91,14 @@ nav {
     z-index: 1001;
 
     .logo {
-        height: 50px; padding-top: 8px
+        height: 50px; 
+        padding-top: 8px
     }
-    .brand-logo {
+    .brand-logo.left {
         color: #6d919e;
         font-size: 22px;
+            font-weight: 300;
+            margin-left: 8px;
     }
 }
 
@@ -123,12 +126,13 @@ nav {
         }
     .container {
         h1 {
-                margin-bottom: 240px;
+                margin-bottom: 222px;
             }
     }
 
     .block {
-            width: 136px;
+            // width: 136px;
+        min-width: 100%;
       height: 104px;
       border-radius: 2px;
       background-color: #fafbfb;
@@ -187,3 +191,10 @@ nav {
         }
     }
 }
+
+/* Other sizes */
+
+@import 'tablet';
+@import 'tablet_ls';
+@import 'laptop';
+@import 'desktop';
