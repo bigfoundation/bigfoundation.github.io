@@ -25,7 +25,7 @@
         }
 
         .introText {
-            margin-bottom: 480px;
+            margin-bottom: 456px;
             margin-top: 24px;
 
             h1 {
@@ -41,6 +41,26 @@
 
                 border-bottom: 1px solid #6d919e;
             }
+        }
+    }
+
+    #home {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.33;
+            letter-spacing: 0.1px;
+            margin: 0;
+        }
+        .btn {
+            width: 284px;
+            height: 48px;
+            line-height: 48px;
         }
     }
 
