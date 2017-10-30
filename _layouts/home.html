@@ -221,36 +221,17 @@ layout: default
             <h2 class="center-align">You can buy goods now!</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
             <div id="offers" class="collection row">
-                <div class="offer col s12 m6 white z-depth-2">
-                    <div class="row">
-                        <div class="img" style="background-image: url(/assets/img/refurb-iphone6s-rosegold.jpeg)"></div>
-                        <div class="col s12">
-                            <h4>Title</h4>
-                            <p>content</p>
-                            <a href="#" target="_blank" class="waves-effect waves-light btn amber accent-3">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="offer col s12 m6 white z-depth-2">
-                    <div class="row">
-                        <div class="img" style="background-image: url(/assets/img/beicbol-naya-bita-bat-chuangxin-28-770-650x650.jpg)"></div>
-                        <div class="col s12">
-                            <h4>Title</h4>
-                            <p>content</p>
-                            <a href="#" target="_blank" class="waves-effect waves-light btn amber accent-3">Buy</a>
-                        </div>
-                    </div>
-                </div>
                 {% for post in site.posts %}
-                <!-- <li class="collection-item avatar">
-                    {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-                    <div class="date-post">{{ post.date | date: date_format }}</div>
-                    <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-                    <p>
-                        {{ post.content | truncatewords: 10 }}
-                    </p>
-                    <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-                </li> -->
+                <div class="offer col s12 m6 white z-depth-2">
+                    <div class="row">
+                        <div class="img" style="background-image: url(/assets/img/{{ post.img }})"></div>
+                        <div class="col s12">
+                            <h4>{{ post.title | escape }}</h4>
+                            <p>{{ post.content | truncatewords: 30 }}</p>
+                            <a href="#" target="_blank" class="waves-effect waves-light btn amber accent-3">Buy for {{ post.price }} BIG</a>
+                        </div>
+                    </div>
+                </div>
                 {% endfor %}
             </div>
         </section>
