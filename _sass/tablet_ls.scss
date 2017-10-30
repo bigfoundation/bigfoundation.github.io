@@ -1,3 +1,12 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 
+    nav {
+        .brand-logo.left {
+            margin-left: 72px;
+            margin-top: 1px;
+        }
+        #logo-container {
+            margin-left: 16px;
+        }
+    }
 }

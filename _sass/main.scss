@@ -91,6 +91,10 @@ p.rss-subscribe {
     margin: 0;
 }
 
+.firstRow {
+    margin: 0;
+}
+
 /* Header */
 nav {
     position: relative;
@@ -111,16 +115,27 @@ nav {
         margin: 0 16px;
     }
 }
+.laptopMenu {
+    li {
+       a {
+        color: #6d919e;
+       } 
+    }
+}
 
 /* Footer */
 
 
 /* Home page */
 #index-banner {
+    position: relative;
     height: 710px;
+    margin: 0;
+        padding: 0;
 
     .index-bg {
             position: absolute; 
+            margin-top: -50px;
 
             height: 480px;
             width: 100%;
@@ -129,18 +144,24 @@ nav {
             background-size: cover;
             background-position: center;
 
-            &.pinned {
-                margin-top: -56px;
+            &.pin-bottom {
+                margin-top: -100px;
             }
             
         }
     .introText {
-        margin-bottom: 217px;
+        // margin-bottom: 217px;
 
         h1 {
             margin-top: 18px;
             font-size: 22px;
         }
+    }
+
+    .smartData {
+        position: absolute;
+        bottom: 4%;
+        margin-bottom: 0;
     }
 
     .block {
@@ -177,10 +198,22 @@ nav {
       }
     }
 }
+#home {
+    margin: 0;
+        padding: 0;
 
+    .section {
+        padding-top: 0;
+
+        h2:first-child {
+            margin-top: 0;
+        }
+    }
+}
 #homefaq {
     border: none;
         box-shadow: none;
+
 
     li {
         &.active {
@@ -225,4 +258,4 @@ nav {
 @import 'tablet';
 @import 'tablet_ls';
 @import 'laptop';
-@import 'desktop';
+@import 'largeMonitor';

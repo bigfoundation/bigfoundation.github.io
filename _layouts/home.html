@@ -1,72 +1,75 @@
 --- 
 layout: default
 ---
-<div class="no-pad-bot" id="index-banner">
+<div id="index-banner" class="no-pad-bot col s12 xl5">
     <div class="index-bg pushpin" data-target="index-banner"></div>
-    <div class="container" style="position: relative; z-index: 1001">
+    <div class="container">
         <div class="row center">
             <div class="col s12 center-align introText">
                 <h1>Basic Income Guarantee</h1>
                 <p class="hide-on-small-only">A basic income (also called basic income guarantee, Citizen's Income, unconditional basic income, universal basic income (UBI), or universal demogrant) is a form of social security in which all citizens or residents of a country receive a regular, unconditional sum of money, either from a government or some other public institution, independent of any other income.</p>
             </div>
-            <div class="col s6 m3 center-align">
-                <div class="block">
-                    <div class="row"><strong>78</strong></div>
-                    <div class="divider"></div>
-                    <div class="row">Created wallets</div>
+        </div>
+    </div>
+            <div class="row smartData">
+                <div class="col s6 m3 center-align">
+                    <div class="block">
+                        <div class="row"><strong>78</strong></div>
+                        <div class="divider"></div>
+                        <div class="row">Created wallets</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col s6 m3 center-align">
-                <div class="block">
-                    <div class="row"><strong>40</strong></div>
-                    <div class="divider"></div>
-                    <div class="row">Queue</div>
+                <div class="col s6 m3 center-align">
+                    <div class="block">
+                        <div class="row"><strong>40</strong></div>
+                        <div class="divider"></div>
+                        <div class="row">Queue</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col s6 m3 center-align">
-                <div class="block">
-                    <div class="row"><strong>90</strong></div>
-                    <div class="divider"></div>
-                    <div class="row">Buy tokens</div>
+                <div class="col s6 m3 center-align">
+                    <div class="block">
+                        <div class="row"><strong>90</strong></div>
+                        <div class="divider"></div>
+                        <div class="row">Buy tokens</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col s6 m3 center-align">
-                <div class="block">
-                    <div class="row"><strong>160</strong></div>
-                    <div class="divider"></div>
-                    <div class="row">Tokens supply</div>
+                <div class="col s6 m3 center-align">
+                    <div class="block">
+                        <div class="row"><strong>160</strong></div>
+                        <div class="divider"></div>
+                        <div class="row">Tokens supply</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col s12 center-align">
-                <div class="block progress">
-                    <div class="row">
-                        <div class="col s4 m2">
-                            <strong class="percent">33 %</strong>
-                        </div>
-                        <div class="col s8 m10">
-                            <div class="row">
-                                <div class="col s4">Balance:</div>
-                                <div class="col s8 right-align"><strong>332</strong> ETH</div>
+                <div class="col s12 center-align">
+                    <div class="block progress">
+                        <div class="row">
+                            <div class="col s4 m2">
+                                <strong class="percent">33 %</strong>
                             </div>
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="progress grey lighten-3">
-                                        <div class="determinate amber darken-1" style="width: 33%"></div>
+                            <div class="col s8 m10">
+                                <div class="row">
+                                    <div class="col s4">Balance:</div>
+                                    <div class="col s8 right-align"><strong>332</strong> ETH</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="progress grey lighten-3">
+                                            <div class="determinate amber darken-1" style="width: 33%"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                    <div class="col s4">SoftCap:</div>
-                                <div class="col s8 right-align"><strong>1000</strong> ETH</div>
+                                <div class="row">
+                                        <div class="col s4">SoftCap:</div>
+                                    <div class="col s8 right-align"><strong>1000</strong> ETH</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
 </div>
-<div id="home" class="z-depth-2">
+<div id="home" class="col s12 xl7">
     <div class="section">
         <div class="row">
             <h2 class="center">How to get BIG?</h2>
@@ -214,27 +217,26 @@ layout: default
             </div>
         </div>
     </div>
-</div>
-<div style="background: #eef2f3">
-    <div class="container last-post">
-        <section>
-            <h2 class="center-align">You can buy goods now!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            <div id="offers" class="collection row">
-                {% for post in site.posts %}
-                <div class="offer col s12 m6 white z-depth-2">
-                    <div class="row">
-                        <div class="img" style="background-image: url(/assets/img/{{ post.img }})"></div>
-                        <div class="col s12">
-                            <h4>{{ post.title | escape }}</h4>
-                            <p>{{ post.content | truncatewords: 30 }}</p>
-                            <a href="#" target="_blank" class="waves-effect waves-light btn amber accent-3">Buy for {{ post.price }} BIG</a>
+    <div style="background: #eef2f3; padding-bottom: 120px;">
+        <div class="container last-post">
+            <section>
+                <h2 class="center-align">You can buy goods now!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <div id="offers" class="collection row">
+                    {% for post in site.posts %}
+                    <div class="offer col s12 m6 white z-depth-2">
+                        <div class="row">
+                            <div class="img" style="background-image: url(/assets/img/{{ post.img }})"></div>
+                            <div class="col s12">
+                                <h4>{{ post.title | escape }}</h4>
+                                <p>{{ post.content | truncatewords: 30 }}</p>
+                                <a href="#" target="_blank" class="waves-effect waves-light btn amber accent-3">Buy for {{ post.price }} BIG</a>
+                            </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
-</div>
 </div>

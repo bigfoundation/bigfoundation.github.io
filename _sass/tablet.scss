@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 
     h1 {
         font-size: 38px;
@@ -47,6 +47,11 @@
     #index-banner {
         height: 1024px;
 
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
         .index-bg {
             height: 1024px;
         }
@@ -54,6 +59,9 @@
         .introText {
             margin-bottom: 456px;
             margin-top: 24px;
+        }
+        .smartData {
+            bottom: 8%;
         }
     }
 

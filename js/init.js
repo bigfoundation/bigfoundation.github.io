@@ -3,17 +3,12 @@
 
         $('.button-collapse').sideNav();
         $('.carousel').carousel();
+
         $('.pushpin').each(function() {
             var $this = $(this);
             var $target = $('#' + $(this).attr('data-target'));
-            if ($this.hasClass("mobiloff")) {
-                if (document.documentElement.clientWidth > 600) {
-                    $this.pushpin({
-                        top: $target.offset().top,
-                        bottom: $target.offset().top + $target.outerHeight() - $this.height()
-                    });
-                }
-            } else {
+
+            if (document.documentElement.clientWidth < 600) {
                 $this.pushpin({
                     top: $target.offset().top,
                     bottom: $target.offset().top + $target.outerHeight() - $this.height()
