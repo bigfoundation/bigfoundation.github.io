@@ -205,6 +205,16 @@ nav {
     }
 }
 
+#offers {
+    .offer {
+        .img {
+            width: 100%;
+            padding-top: 100%;
+            background-size: cover;
+        }
+    }
+}
+
 /* Other sizes */
 
 @import 'tablet';

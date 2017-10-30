@@ -1,5 +1,32 @@
 @media only screen and (min-width: 768px) {
 
+    h1 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.1px;
+        width: 82%;
+        padding-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        border-bottom: 1px solid #6d919e;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: 0.1px;
+        margin: 0;
+    }
+
     /* Header */
     nav {
         height: 72px;
@@ -9,8 +36,8 @@
             margin-top: 9px;
         }
         .brand-logo.left {
-                margin-left: 15px;
-        margin-top: 4px;
+            margin-left: 15px;
+            margin-top: 4px;
         }
         .button-collapse {
             margin: 0 24px;
@@ -19,7 +46,7 @@
 
     #index-banner {
         height: 1024px;
-    
+
         .index-bg {
             height: 1024px;
         }
@@ -27,41 +54,15 @@
         .introText {
             margin-bottom: 456px;
             margin-top: 24px;
-
-            h1 {
-                font-size: 38px;
-                font-weight: 600;
-                line-height: 1.2;
-                letter-spacing: 0.1px;
-                width: 82%;
-                padding-bottom: 16px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 20px;
-
-                border-bottom: 1px solid #6d919e;
-            }
         }
     }
 
     #home {
-        h2 {
-            font-size: 40px;
-            font-weight: 600;
-            line-height: 1.2;
-        }
-        h3 {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.33;
-            letter-spacing: 0.1px;
-            margin: 0;
-        }
+
         .btn {
             width: 284px;
             height: 48px;
             line-height: 48px;
         }
     }
-
 }
