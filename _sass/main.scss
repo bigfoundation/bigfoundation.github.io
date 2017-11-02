@@ -162,6 +162,13 @@ nav {
         position: absolute;
         bottom: 4%;
         margin-bottom: 0;
+
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+
+        max-width: 750px;
     }
 
     .block {
@@ -238,7 +245,29 @@ nav {
     }
 }
 
+#homefaqDesktop {
+    padding: 0 5%;
+}
+#another,
+#roadmap {
+    padding: 0 6%;
+}
+#roadmap {
+    margin-top: 60px;
+
+    .promo-caption {
+        font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+      letter-spacing: 0.1px;
+    }
+}
+
+
 #offers {
+    background: #eef2f3;
+    padding: 5% 6% 120px 6%; 
+
     .offer {
         .img {
             width: 100%;
