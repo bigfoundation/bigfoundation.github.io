@@ -8,7 +8,11 @@
         {% assign page_paths = site.header_pages | default: default_paths %}
 
           <ul class="right hide-on-med-and-down laptopMenu">
-            <li><a href="{{ "/" | relative_url }}">Home </a></li>
+            <!-- <li><a href="{{ "/" | relative_url }}">Home </a></li> -->
+            <li><a target="_blank" href="https://github.com/bigfoundation/Documentation/blob/master/BIGwhitepaperEN.md">WHITEPAPER</a></li>
+            <li><a href="#roadmap">ROADMAP</a></li>
+            <li><a href="#homefaqDesktop">GET BASIC INCOME</a></li>
+
             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
@@ -23,7 +27,11 @@
             <li class="center-align">
                 <img src="/assets/img/logo2.png" class="logo" alt="Basic income guarantee foundation logo" style="width: 180px; height: 180px;" />
             </li>
-            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#">Home</a></li> -->
+            <li><a target="_blank" href="https://github.com/bigfoundation/Documentation/blob/master/BIGwhitepaperEN.md">WHITEPAPER</a></li>
+            <li><a href="#roadmap">ROADMAP</a></li>
+            <li><a href="#homefaq">GET BASIC INCOME</a></li>
+
                             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}

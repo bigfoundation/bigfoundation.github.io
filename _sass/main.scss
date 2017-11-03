@@ -249,7 +249,8 @@ nav {
     padding: 0 5%;
 }
 #another,
-#roadmap {
+#roadmap,
+#team {
     padding: 0 6%;
 }
 #roadmap {
@@ -260,6 +261,34 @@ nav {
       font-weight: 600;
       line-height: 1.33;
       letter-spacing: 0.1px;
+    }
+}
+
+#team {
+    .member {
+        padding-bottom: 12px;
+    }
+    .photo {
+        width: 100%;
+        padding-top: 100%;
+    }
+    .promo-caption {
+        font-size: 24px;
+        // font-weight: 600px;
+        text-align: left;
+        margin: 8px 0;
+
+    }
+
+    a {
+        text-align: left;
+        text-decoration: underline;
+    }
+    .light {
+        width: 36%;
+        padding-bottom: 12px;
+                border-bottom: 2px solid #ffb300;
+        margin-top: 0;
     }
 }
 
