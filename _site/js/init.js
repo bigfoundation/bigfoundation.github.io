@@ -17,5 +17,17 @@
 
         });
 
+        $.get( "https://lk.big.foundation/smartContract", function( data ) {
+            var percent = (data.result.collected/data.result.softCap * 100).toFixed(2)+"%";
+            $('#wallets').text(data.result.createdWallets);
+            $('#queue').text(data.result.queue);
+            $('#buyed').text(parseInt(data.result.buyTokens,10));
+            $('#supply').text(parseInt(data.result.tokensSupply,10));
+            $('#collected').text(data.result.collected);
+            $('#cap').text(data.result.softCap);
+            $('#progress').css("width", percent);
+            $('#percent').text(percent);
+        }, "json" );
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
