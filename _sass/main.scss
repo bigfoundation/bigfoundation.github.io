@@ -28,6 +28,10 @@ h2 {
   line-height: 1.33;
   letter-spacing: 0.1px;
 }
+
+iframe {
+    max-width:100%;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -250,7 +254,8 @@ nav {
 }
 #another,
 #roadmap,
-#team {
+#team,
+#press {
     padding: 0 6%;
 }
 #roadmap {
@@ -262,6 +267,10 @@ nav {
       line-height: 1.33;
       letter-spacing: 0.1px;
     }
+}
+
+#press .link {
+    display: inline-block;
 }
 
 #team {
